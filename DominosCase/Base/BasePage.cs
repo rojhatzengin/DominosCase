@@ -55,7 +55,8 @@ namespace DominosCase.Base
         public void SelectDropdown(By by, string selectValue)
         {
             IWebElement dropdownElement = FindElement(by);
-            dropdownElement.Click();
+            ClickWithWait(by);
+            //dropdownElement.Click();
 
             IWebElement menuItem = dropdownElement.FindElement(By.XPath("//div[contains(@class, 'menuItem') and contains(., '"+ selectValue +"')]"));
             menuItem.Click();

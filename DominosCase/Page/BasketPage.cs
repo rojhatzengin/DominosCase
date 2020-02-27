@@ -26,7 +26,7 @@ namespace DominosCase.Page
             SelectDropdown(BasketConstants.STREET_DROPDOWN, "Azizler Sk.");
             SendKeys(BasketConstants.DOOR_NUMBER, "2/A");
             SendKeys(BasketConstants.APARTMENT_NUMBER, "12");
-            SendKeys(BasketConstants.PHONE_NUMBER, "055234325");
+            SendKeys(BasketConstants.PHONE_NUMBER, Keys.Home + "5052323322");
             SendKeys(BasketConstants.ADDRESS_INSTRUCTION, "Ev");
             HoverElement(BasketConstants.SAVE_ADDRESS);
             ClickWithWait(BasketConstants.SAVE_ADDRESS);
